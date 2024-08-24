@@ -186,11 +186,17 @@ body ::before {
     text-align: center;
     gap: 15px;
     margin-top: 25%;
+    padding: 20px; /* Add padding for better spacing */
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .section-message img {
-    height: 180px;
-    width: fit-content;
+    max-width: 100%; /* Ensure image scales with container width */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Adjust width to fit the image */
+    display: block; /* Remove extra space below image */
+    margin: 0 auto; /* Center the image */
 }
 
 /* END SECTION MESSAGE */
